@@ -15,7 +15,8 @@ public class BookResponse {
     private int publicationYear;
 
     public static BookResponse from(Book book) {
-        return BookResponse.builder()
+        return BookResponse
+                .builder()
                 .id(book.getId())
                 .title(book.getTitle())
                 .author(book.getAuthor())
